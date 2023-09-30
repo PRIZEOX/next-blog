@@ -1,0 +1,50 @@
+.link{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.cont{display: flex; align-items: center; gap: 15px;}
+
+.burger{
+    width: 20px;
+    height: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.del{}
+
+.menu{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: var(--bg);
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 36px;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--textColor);
+}
+
+@media screen and (max-width:640px) {
+    .burger{
+        display: flex;
+    }
+    .menu{
+        display: flex;
+    }
+    .del{display: none;}
+    .link{display: none;}
+}
+
