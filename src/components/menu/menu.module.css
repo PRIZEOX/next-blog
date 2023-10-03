@@ -1,1 +1,3 @@
-.container{}
+.container{
+    flex: 2;
+}
