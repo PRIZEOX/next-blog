@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './cardlist.module.css'
 import Image from 'next/image'
 import { Card } from '../card/Card'
+import { Pagination } from '../pagination/Pagination'
 
 export const CardList = () => {
   return (
@@ -10,6 +11,9 @@ export const CardList = () => {
       <div className={styles.posts}>
         <div className={styles.post}>
           <Card/>
+          <Card/>
+          <Card/>
+          <Pagination/>
         </div>
       </div>
     </div>

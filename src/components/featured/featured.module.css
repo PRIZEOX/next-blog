@@ -3,8 +3,8 @@
 }
 
 .title{
-    font-size: 96px;
-    font-weight: 300;
+  font-size: 96px;
+  font-weight: 300;
 }
 
 .post{
@@ -62,8 +62,12 @@
       font-size: 64px;
     }
   
-    .imgContainer {
+    .imageContainer {
       display: none;
+    }
+
+    .postTitle{
+      font-size: 36px;
     }
   }
   
@@ -71,10 +75,22 @@
     .title {
       font-size: 48px;
     }
+    .postTitle{
+      font-size: 30px;
+    }
+    .postDesc{
+      font-size: 18px;
+    }
   }
   
   @media screen and (max-width: 640px) {
     .title {
       font-size: 36px;
+    }
+    .postTitle{
+      font-size: 24px;
+    }
+    .postDesc{
+      font-size: 16px;
     }
   }

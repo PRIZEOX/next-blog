@@ -6,6 +6,7 @@ import { CardList } from "@/components/cardList/CardList";
 import { Menu } from "@/components/menu/Menu";
 
 
+
 export default function Home() {
   return(
     <div className={styles.container}>
