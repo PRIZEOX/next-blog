@@ -18,6 +18,7 @@ export const Navbar = () => {
       <div className={styles.links}>
         <ThemeToggle/>
         <Link href='/' className={styles.link}>Домашняя</Link>
+        <Link href='/' className={styles.link}>Блог</Link>
         <Link href='/' className={styles.link}>Контакты</Link>
         <Link href='/' className={styles.link}>О нас</Link>
         <AuthLink/>
