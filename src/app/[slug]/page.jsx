@@ -2,13 +2,14 @@ import React from 'react'
 import styles from './singlePage.module.css'
 import { Menu } from '@/components/menu/Menu'
 import Image from 'next/image'
+import Comments from '@/components/comments/Comments'
 
 const SinglePage = () => {
   return (
     <div className={styles.container}>
         <div className={styles.infoContainer}>
             <div className={styles.textContainer}>
-                <h1 className={styles.title}>Азер - необязательно человек</h1>
+                <h1 className={styles.title}>Какой нибудь заголовок будет здесь</h1>
                 <div className={styles.user}>
                     <div className={styles.userImageContainer}>
                         <Image alt='' src='/p1.jpeg' fill className={styles.avatar}/>
@@ -31,9 +32,13 @@ const SinglePage = () => {
                         А ещё предприниматели в сети интернет рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.
                     </p>
                 </div>
+                <div className={styles.comments}>
+                    <Comments/>
+                </div>
             </div>
             <Menu/>
         </div>
+
     </div>
   )
 }

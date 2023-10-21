@@ -5,7 +5,7 @@ import styles from './authlink.module.css'
 import Link from 'next/link';
 
 export const AuthLink = () => {
-  const status = "notauthenticated";
+  const status = "authenticated";
   const [open ,setOpen] = useState(false)
   return (
     <div className={styles.cont}>
