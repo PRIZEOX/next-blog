@@ -13,7 +13,7 @@ export const AuthLink = () => {
         <Link href='/login' className={styles.del}>Войти</Link>
       ): (
         <>
-          <Link href='/write' className={styles.del}>Выложить</Link>
+          <Link href='/write' className={styles.del}>Написать</Link>
           <span className={styles.link}>Выйти</span>
         </>
       )}

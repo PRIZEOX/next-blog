@@ -1,0 +1,66 @@
+.container{
+
+}
+
+.title{
+    padding: 50px;
+    font-size: 64px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: var(--textColor);
+    width: 100%;
+}
+
+.title::placeholder{
+    color: #b3b3b1;
+}
+
+.editor{
+    display: flex;
+    gap: 20px;
+    height: 700px;
+    position: relative;
+}
+
+.btn, .addBtn{
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.addBtn{
+    border-color: #1a8917;
+}
+
+.add{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    background-color: var(--bg);
+    left: 50px;
+}
+
+.textArea{
+    width: 100%;
+}
+
+.publish{
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1a8917;
+    color: white;
+    border-radius: 20px;
+}
