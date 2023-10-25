@@ -1,6 +1,6 @@
 import GithubProvider from 'next-auth/providers/github';
 import GoogleProvider from 'next-auth/providers/google';
-import VKProvider from 'next-auth/providers/vk';
+import DiscordProvider from 'next-auth/providers/discord';
 
 export const authOptions = {
     providers: [
@@ -12,9 +12,9 @@ export const authOptions = {
             clientId: process.env.GOOGLE_ID,
             clientSecret: process.env.GOOGLE_SECRET,
         }),
-        VKProvider({
-            clientId: process.env.VK_ID,
-            clientSecret: process.env.VK_SECRET,
+        DiscordProvider({
+            clientId: process.env.DISCORD_ID,
+            clientSecret: process.env.DISCORD_SECRET,
         }),
     ],
 }

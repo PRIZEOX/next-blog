@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import styles from './authlink.module.css'
 import Link from 'next/link';
+import { signOut } from 'next-auth/react';
 
 export const AuthLink = () => {
   const status = "authenticated";
@@ -14,7 +15,7 @@ export const AuthLink = () => {
       ): (
         <>
           <Link href='/write' className={styles.del}>Написать</Link>
-          <span className={styles.link}>Выйти</span>
+          <span className={styles.link} onClick={signOut}>Выйти</span>
         </>
       )}
         <div className={styles.burger} onClick={() => setOpen(!open)}>
