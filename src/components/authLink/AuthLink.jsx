@@ -5,9 +5,12 @@ import styles from './authlink.module.css'
 import Link from 'next/link';
 import { signOut } from 'next-auth/react';
 
+
 export const AuthLink = () => {
-  const status = "authenticated";
+  const status = "notauthenticated";
   const [open ,setOpen] = useState(false)
+
+  if(typeof window !== undefined){
   return (
     <div className={styles.cont}>
       {status === "notauthenticated" ? (
@@ -32,7 +35,6 @@ export const AuthLink = () => {
             <Link href='/login'>Войти</Link>
           ): (
           <>
-            <Link href='/write'>Выложить</Link>
             <span>Выйти</span>
           </>
           )}
@@ -40,4 +42,5 @@ export const AuthLink = () => {
       )}
     </div>
   )
+  }
 }
